@@ -1,85 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
-
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link href="./assets/favicon.ico" rel="icon">
-
-  <title>Aleicer Vesga</title>
-
-  <link href="./main.3f6952e4.css" rel="stylesheet">
-  <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Aleicer Vesga - Desarrollador de Software">
+    <title>Aleicer Vesga | Desarrollador de Software</title>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="minimal">
-  <div id="site-border-left"></div>
-  <div id="site-border-right"></div>
-  <div id="site-border-top"></div>
-  <div id="site-border-bottom"></div>
-  <!-- Add your content of header -->
-  <header>
-    <nav class="navbar  navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <div class="collapse navbar-collapse header-text" id="navbar-collapse">
-          <ul class="nav navbar-nav ">
-            <li><a href="./index.html" title="">01 : Inicio</a></li>
-            <li><a href="./works.html" title="">02 : Experiencias</a></li>
-            <li><a href="./about.html" title="">03 : Sobre mi</a></li>
-            <li><a href="./contact.html" title="">04 : Contacto</a></li>
-          </ul>
-
-
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container"
-    style="background-image: url('./assets/images/space2\ .png')">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Hola,<br>
-                <span id="typed-strings">
-                  <span class="text-index">Soy Aleicer Vesga</span>
-                  <span class="text-index">Backend Developer</span>
-                  <span class="text-index">y frontend Developer</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">A|V</a>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact" class="btn-contact">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </nav>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      type();
-      movingBackgroundImage();
-    });
-  </script>
-  <script type="text/javascript" src="./main.js"></script>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="greeting">Hola, soy</p>
+                    <h1 class="name">Aleicer Vesga</h1>
+                    <h2 class="title">Desarrollador de Software</h2>
+                    <p class="bio-short">
+                        Enfocado en patrones de diseño, arquitecturas limpias y software escalable.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">Contáctame</a>
+                        <a href="#experience" class="btn btn-outline">Ver Experiencia</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="blob"></div>
+                    <!-- Placeholder for user image if they want to add one later, or use a stylized graphic -->
+                    <div class="code-block">
+                        <pre><code>
+const developer = {
+  name: "Aleicer",
+  role: "Backend & Frontend",
+  passion: "Clean Code"
+};
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Soy un desarrollador de software con experiencia desde 2021, comprometido con el aprendizaje continuo y la superación personal. Me enfoco en mantenerme a la vanguardia de la industria tecnológica, destacando mis conocimientos en patrones de diseño, arquitecturas y software escalable.
+                        </p>
+                        <p>
+                            Siempre busco las mejores soluciones a los desafíos de programación. Además, poseo habilidades en liderazgo y trabajo en equipo, así como una firme disposición para enseñar.
+                        </p>
+                        <p>
+                            Mi background de 10 años como enfermero me ha dotado de una fuerte responsabilidad y la capacidad de encontrar oportunidades en medio de dificultades, lo que enriquece mi enfoque profesional.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3 id="experience">+2</h3>
+                            <p>Años de Experiencia Dev</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>+10</h3>
+                            <p>Años en Salud (Soft Skills)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h2 class="section-title">Experiencia Laboral</h2>
+                <div class="timeline">
+                    <!-- Job 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Actualidad</div>
+                        <div class="timeline-content">
+                            <h3>Desarrollador Backend</h3>
+                            <h4>KI Planner</h4>
+                            <ul>
+                                <li>Desarrollar plataforma de venta de medicamentos.</li>
+                                <li>Uso de herramientas como Playwright para web scraping.</li>
+                                <li>Trabajo con Node.js, NestJS como herramientas para desarrollo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Job 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Feb 2018 - 2022</div>
+                        <div class="timeline-content">
+                            <h3>Paramédico Triage Telefónico</h3>
+                            <h4>Grupo EMI SA</h4>
+                            <ul>
+                                <li>Recepción y clasificación pacientes para valoración en casa.</li>
+                                <li>Manejo y análisis de síntomas.</li>
+                                <li>Manejo de situación de angustia.</li>
+                                <li>Mantener tranquilidad en momentos de urgencia.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education">
+            <div class="container">
+                <h2 class="section-title">Educación</h2>
+                <div class="grid-cards">
+                    <div class="card">
+                        <h3>Tecnólogo en Desarrollo de Software</h3>
+                        <p class="school">Institución Universitaria Digital de Antioquia</p>
+                        <p class="year">2025 - Medellín</p>
+                        <p class="details">Graduado como Tecnólogo en Desarrollo de Software con sólida formación técnica en tecnologías web, mobile y backend.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Estudiante de Ingeniería en Software</h3>
+                        <p class="school">Institución Universitaria Digital de Antioquia</p>
+                        <p class="year">2022 - (cursando)</p>
+                        <p class="details">Estudiante de Ingeniería en Software, preparado para convertirse en un ingeniero de software con sólida formación en analitica de datos big data y machine learning.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Programación con Énfasis en Web</h3>
+                        <p class="school">Universidad de Caldas</p>
+                        <p class="year">2022</p>
+                        <p class="details">Promoción Misión TIC 2022.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Diplomado en PHP</h3>
+                        <p class="school">Politécnico de Colombia</p>
+                        <p class="year">2021</p>
+                    </div>
+                    <div class="card">
+                        <h3>Java y Desarrollo Web</h3>
+                        <p class="school">Udemy</p>
+                        <p class="year">2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-wrapper">
+                    <div class="skill-category">
+                        <h3>Tech Stack</h3>
+                        <div class="skill-icons">
+                            <div class="skill-item"><i class="fab fa-typescript"></i> <span>TypeScript</span></div>
+                            <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                            <div class="skill-item"><i class="fab fa-java"></i> <span>Java</span></div>
+                            <div class="skill-item"><i class="fab fa-node"></i> <span>Node.js</span></div>
+                            <div class="skill-item"><i class="fab fa-python"></i> <span>Python</span></div>
+                            <div class="skill-item"><i class="fas fa-server"></i> <span>NestJS</span></div>
+                            <div class="skill-item"><i class="fas fa-database"></i> <span>MongoDB</span></div>
+                            <div class="skill-item"><i class="fas fa-table"></i> <span>SQL</span></div>
+                            <div class="skill-item"><i class="fab fa-git-alt"></i> <span>Git</span></div>
+                            <div class="skill-item"><i class="fab fa-aws"></i> <span>AWS</span></div>
+                            <div class="skill-item"><i class="fab fa-docker"></i> <span>Docker</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Idiomas</h3>
+                        <div class="language-bar">
+                            <span>Inglés B1</span>
+                            <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Bogotá, Puente Aranda, 111621, Colombia</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>321 494 6645</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>aleicer.vesga@gmail.com</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/aleicer-vesga-rueda-072b70210/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://aleicer-vesga-portafolio.netlify.app/" target="_blank"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aleicer Vesga. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
 </body>
-
 </html>
