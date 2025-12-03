@@ -1,6 +1,6 @@
 :root {
     /* Color Palette */
-    --color-navy: #011A27;
+    --color-navy: #011a27c5;
     --color-blueberry: #063852;
     --color-tangerine: #F0810F;
     --color-daffodil: #E6DF44;
@@ -56,7 +56,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(1, 26, 39, 0.95), rgba(6, 56, 82, 0.95)), url('./assets/images/aleicer_img_1.png');
+    background: linear-gradient(rgba(1, 26, 39, 0.822), rgba(6, 55, 82, 0.527)), url('./assets/images/aleicer_img_1.png');
     background-size: cover, 50%;
     background-repeat: no-repeat;
     background-position: center;
